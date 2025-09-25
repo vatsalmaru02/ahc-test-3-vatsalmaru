@@ -1,0 +1,54 @@
+//Colors
+$color-sidebar-bg: #eef0f4;
+$color-navbar-bg: #faf3f6;
+$color-white: #fff;
+$color-black: #000;
+
+$color-text-primary: #090a08;
+
+//Font size
+$font-size-large: 2.2rem;
+$font-size-medium: 1.8rem;
+$font-size-regular: 1.4rem;
+$font-size-small: 1.2rem;
+$font-size-tiny: 1.1rem;
+$font-size-mini: 1rem;
+
+//Font weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+//Spacing
+$spacing-xs: 0.8rem;
+$spacing-sm: 1.2rem;
+$spacing-md: 1.6rem;
+$spacing-lg: 2.4rem;
+$spacing-xl: 3.2rem;
+$spacing-xxl: 4.8rem;
+
+//Border radius
+$border-radius-small: 0.2rem;
+$border-radius-medium: 1rem;
+$border-radius-large: 2rem;
+$border-radius-round: 50%;
+
+//Breakpoints
+$bp-large-medium: 85.375em; // 1366px
+$bp-largest: 81.25em; // 1300px
+$bp-large: 75em; // 1200px
+$bp-small: 56.25em; // 900px
+$bp-smaller: 50em; // 800px
+$bp-smallest: 43.75em; // 700px
+$bp-phone: 31.25em; //500 px
+$bp-phone-small: 25em; //400px
+
+//Transition
+$transition-fast: all 0.2s ease-in-out;
+$transition-medium: all 0.3s ease-in-out;
+$transition-slow: all 0.4s ease-in-out;
+
+//Z-index
+$z-index-dropdown: 100;
+$z-index-model: 1000;

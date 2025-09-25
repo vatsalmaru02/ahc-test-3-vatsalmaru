@@ -1,0 +1,123 @@
+// Media query mixin
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $bp-phone) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: $bp-phone-small) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: $bp-smallest) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: $bp-small) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: $bp-medium) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (max-width: $bp-large) {
+      @content;
+    }
+  }
+  @if $breakpoint == largest {
+    @media only screen and (max-width: $bp-largest) {
+      @content;
+    }
+  }
+  @if $breakpoint == large-medium {
+    @media only screen and (max-width: $bp-large-medium) {
+      @content;
+    }
+  }
+}
+
+// Flexbox center mixin
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Grid center mixin
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+// Button base mixin
+@mixin button-base {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: $transition-fast;
+}
+
+// Circle mixin
+@mixin circle($size) {
+  height: $size;
+  width: $size;
+  border-radius: $border-radius-round;
+}
+
+// Absolute center mixin
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Scrollbar styling mixin
+@mixin custom-scrollbar(
+  $thumb-color: $color-accent-3,
+  $thumb-hover-color: $color-primary-light
+) {
+  &::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 20px;
+    border-radius: $border-radius-pill;
+    background-color: $thumb-color;
+
+    &:hover {
+      background-color: $thumb-hover-color;
+    }
+  }
+}
+
+// Text truncation mixin
+@mixin text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Visually hidden mixin
+@mixin visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
