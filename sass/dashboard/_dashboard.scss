@@ -1,0 +1,38 @@
+.dashboard {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    border: 1px solid $color-border;
+    border-radius: $border-radius-medium;
+
+    &--title {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid $color-border;
+
+        &-text-1 {
+            font-size: $font-size-medium;
+            font-weight: $font-weight-semibold;
+        }
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+
+    &--team {
+      height: 2.8rem;
+      width: 2.8rem;
+      border-radius: $border-radius-round;
+      margin-left: -1.2rem;
+      border: 2px solid $color-white;
+    }
+  }
+}

@@ -1,10 +1,22 @@
 //Colors
-$color-sidebar-bg: #eef0f4;
+$color-sidebar-bg: #d4dff583;
+$color-bg-primary: #d4dff528;
 $color-navbar-bg: #faf3f6;
 $color-white: #fff;
 $color-black: #000;
 
+$color-border: #cfd1d3;
+
 $color-text-primary: #090a08;
+$color-text-secondary: #6c757d;
+
+//Box Shadow
+$shadow-light: 0 0 3rem rgba(0, 0, 0, 0.05);
+$shadow-medium: 0 0 4rem rgba(0, 0, 0, 0.05);
+$shadow-card: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
+$shadow-task: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
+$shadow-overview: 0 0 2rem rgba(0, 0, 0, 0.1);
+$shadow-reminder: 0 0 1rem rgba(0, 0, 0, 0.03);
 
 //Font size
 $font-size-large: 2.2rem;
@@ -18,6 +30,7 @@ $font-size-mini: 1rem;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
+$font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 //Spacing

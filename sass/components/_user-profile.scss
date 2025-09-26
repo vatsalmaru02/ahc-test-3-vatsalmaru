@@ -1,0 +1,44 @@
+.user {
+  display: flex;
+  align-items: center;
+  color: $color-text-primary;
+  background-color: $color-white;
+  box-shadow: $shadow-light;
+  border-radius: 10px;
+  transition: $transition-medium;
+  cursor: pointer;
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}
+
+.user-profile {
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+
+  &__img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: $border-radius-round;
+    object-fit: cover;
+  }
+
+  &__info {
+    flex: 1;
+  }
+
+  &__name {
+    font-size: $font-size-regular;
+    font-weight: $font-weight-medium;
+    color: $color-text-primary;
+  }
+
+  &__email {
+    font-size: $font-size-small;
+  }
+}
