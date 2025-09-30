@@ -121,7 +121,7 @@
 
   // Responsive breakpoints
   @include respond(large-medium) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @include respond(tab-land) {
