@@ -53,6 +53,7 @@
   &__img {
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     &--team {
       @include circle(2.8rem);
@@ -64,6 +65,7 @@
   .tasks__icon {
     height: 1rem;
     width: 1rem;
+    cursor: pointer;
   }
 
   &__btn {

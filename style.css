@@ -18,7 +18,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-@media only screen and (max-width: 85.375em) {
+@media only screen and (max-width: 87.625em) {
   html {
     font-size: 52.5%;
   }
@@ -98,6 +98,7 @@ html {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 }
 .column .column-header .column-actions {
   display: flex;
@@ -602,7 +603,7 @@ html {
   gap: 0.8rem;
   border: 1px solid #cfd1d3;
   border-radius: 1rem;
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 1rem;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.05);
   background-color: #fff;
@@ -1001,6 +1002,7 @@ html {
 .dashboard__img {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .dashboard__img--team {
   height: 2.8rem;
@@ -1012,6 +1014,7 @@ html {
 .dashboard .tasks__icon {
   height: 1rem;
   width: 1rem;
+  cursor: pointer;
 }
 .dashboard__btn {
   display: flex;
@@ -1055,7 +1058,7 @@ html {
   border: 1px solid #cfd1d3;
   border-radius: 2rem;
 }
-@media only screen and (max-width: 85.375em) {
+@media only screen and (max-width: 87.625em) {
   .dashboard {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1099,7 +1102,7 @@ html {
   grid-template-rows: auto 1fr;
   height: 100dvh;
 }
-@media only screen and (max-width: 85.375em) {
+@media only screen and (max-width: 87.625em) {
   .container {
     grid-template-columns: min(28rem, 35%) 1fr;
   }
