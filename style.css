@@ -566,7 +566,7 @@ html {
 }
 
 .img-in-card {
-  max-width: 19rem !important;
+  width: 100% !important;
   height: 10rem !important;
   border-top: 5px solid rgba(196, 126, 52, 0.3215686275);
   border-right: 5px solid rgba(196, 126, 52, 0.3215686275);
