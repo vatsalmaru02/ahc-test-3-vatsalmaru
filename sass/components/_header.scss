@@ -5,7 +5,8 @@
   padding: 1rem 2rem 1.5rem 2rem;
   background-color: $color-bg-primary;
   border-bottom: 1px solid $color-border;
-
+  background-image: radial-gradient(#edeaed, #fff);
+  
   &__text-1 {
     font-size: $font-size-tiny;
     font-weight: $font-weight-regular;
@@ -47,7 +48,7 @@
 
     &__input {
       font-size: $font-size-mini;
-      font-weight: $font-weight-light;
+      font-weight: $font-weight-semibold;
       color: $color-text-secondary;
       border: none;
       outline: none;
@@ -94,4 +95,8 @@
       }
     }
   }
+}
+
+.k {
+  font-weight: $font-weight-semibold;
 }

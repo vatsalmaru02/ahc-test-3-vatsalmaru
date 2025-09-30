@@ -2,6 +2,7 @@
   background: $color-white;
   border-radius: 1.2rem;
   padding: 1rem 2rem;
+  padding-top: 0;
 
   overflow-y: auto;
   @include custom-scrollbar;
@@ -26,6 +27,7 @@
     align-items: center;
     padding-bottom: 1rem;
     border-bottom: 1px solid $color-border;
+    padding-top: 1rem;
 
     position: sticky;
     top: 0;
@@ -191,7 +193,7 @@
         }
 
         &--card-1 {
-          border: 1px solid #426fc346;
+          border: 1px solid #98b5eb46;
           color: #2196f3;
         }
         &--card-2 {
@@ -203,27 +205,27 @@
           color: #c97e7a;
         }
         &--card-4 {
-          border: 1px solid #c47e3460;
+          border: 1px solid #ffb96e6c;
           color: #c47e34;
         }
         &--card-5 {
-          border: 1px solid #309d5875;
+          border: 1px solid #63e19175;
           color: #309d58;
         }
         &--card-6 {
-          border: 1px solid #b058a08f;
+          border: 1px solid #fea3ed8f;
           color: #b058a0;
         }
         &--card-7 {
-          border: 1px solid #2e56ba7c;
+          border: 1px solid #8bacff7c;
           color: #2e56ba;
         }
         &--card-8 {
-          border: 1px solid #26869285;
+          border: 1px solid #3ad2e785;
           color: #268692;
         }
         &--card-9 {
-          border: 1px solid #95473285;
+          border: 1px solid #fb9c8185;
           color: #954832;
         }
       }
@@ -486,7 +488,7 @@
         width: 1.8rem;
         height: 1.8rem;
         border-radius: $border-radius-round;
-        border: 1px solid #9c27b0;
+
         appearance: none;
         -webkit-appearance: none;
         cursor: pointer;
@@ -494,6 +496,7 @@
         background: transparent;
 
         &-1 {
+          border: 1px solid #a6c1f7;
           &:checked {
             background: #533a91;
 
@@ -509,6 +512,7 @@
           }
         }
         &-2 {
+          border: 1px solid #9ac9d4;
           &:checked {
             background: #268692;
 
@@ -536,13 +540,13 @@
 
   &--card-1 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #2195f338;
+    border: 1px solid #98b5eb46;
     border-radius: 0.8rem;
   }
 
   &--card-2 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #2195f338;
+    border: 1px solid #98b5eb46;
     border-radius: 0.8rem;
     color: #533a91;
   }
@@ -556,47 +560,47 @@
 
   &--card-4 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #c47e3452;
+    border: 1px solid #ffb96e6c;
     border-radius: 0.8rem;
     color: #c47e34;
   }
 
   &--card-5 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #309d5875;
+    border: 1px solid #63e19175;
     border-radius: 0.8rem;
     color: #309d58;
   }
 
   &--card-6 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #b058a08f;
+    border: 1px solid #fea3ed8f;
     border-radius: 0.8rem;
     color: #b058a0;
   }
   &--card-7 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #2e56ba7c;
+    border: 1px solid #8bacff7c;
     border-radius: 0.8rem;
     color: #2e56ba;
   }
 
   &--card-8 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #26869285;
+    border: 1px solid #3ad2e785;
     border-radius: 0.8rem;
     color: #268692;
   }
 
   &--card-9 {
     padding: 0.2rem 0.5rem;
-    border: 1px solid #95473285;
+    border: 1px solid #fb9c8185;
     border-radius: 0.8rem;
     color: #954832;
   }
 
   &__icon {
-    height: 1.2rem; 
+    height: 1.2rem;
     width: 1.2rem;
   }
 }

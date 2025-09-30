@@ -53,6 +53,7 @@ html {
   background: #fff;
   border-radius: 1.2rem;
   padding: 1rem 2rem;
+  padding-top: 0;
   overflow-y: auto;
 }
 .column::-webkit-scrollbar {
@@ -87,6 +88,7 @@ html {
   align-items: center;
   padding-bottom: 1rem;
   border-bottom: 1px solid #cfd1d3;
+  padding-top: 1rem;
   position: sticky;
   top: 0;
   background: #fff;
@@ -208,7 +210,7 @@ html {
   transition: all 0.2s ease-in-out;
 }
 .card .card-tags .tag__btn--card-1 {
-  border: 1px solid rgba(66, 111, 195, 0.2745098039);
+  border: 1px solid rgba(152, 181, 235, 0.2745098039);
   color: #2196f3;
 }
 .card .card-tags .tag__btn--card-2 {
@@ -220,27 +222,27 @@ html {
   color: #c97e7a;
 }
 .card .card-tags .tag__btn--card-4 {
-  border: 1px solid rgba(196, 126, 52, 0.3764705882);
+  border: 1px solid rgba(255, 185, 110, 0.4235294118);
   color: #c47e34;
 }
 .card .card-tags .tag__btn--card-5 {
-  border: 1px solid rgba(48, 157, 88, 0.4588235294);
+  border: 1px solid rgba(99, 225, 145, 0.4588235294);
   color: #309d58;
 }
 .card .card-tags .tag__btn--card-6 {
-  border: 1px solid rgba(176, 88, 160, 0.5607843137);
+  border: 1px solid rgba(254, 163, 237, 0.5607843137);
   color: #b058a0;
 }
 .card .card-tags .tag__btn--card-7 {
-  border: 1px solid rgba(46, 86, 186, 0.4862745098);
+  border: 1px solid rgba(139, 172, 255, 0.4862745098);
   color: #2e56ba;
 }
 .card .card-tags .tag__btn--card-8 {
-  border: 1px solid rgba(38, 134, 146, 0.5215686275);
+  border: 1px solid rgba(58, 210, 231, 0.5215686275);
   color: #268692;
 }
 .card .card-tags .tag__btn--card-9 {
-  border: 1px solid rgba(149, 71, 50, 0.5215686275);
+  border: 1px solid rgba(251, 156, 129, 0.5215686275);
   color: #954832;
 }
 .card .card-title {
@@ -470,12 +472,14 @@ html {
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 50%;
-  border: 1px solid #9c27b0;
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
   position: relative;
   background: transparent;
+}
+.card .checklist .checklist-item .checkbox-1 {
+  border: 1px solid #a6c1f7;
 }
 .card .checklist .checklist-item .checkbox-1:checked {
   background: #533a91;
@@ -488,6 +492,9 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.card .checklist .checklist-item .checkbox-2 {
+  border: 1px solid #9ac9d4;
 }
 .card .checklist .checklist-item .checkbox-2:checked {
   background: #268692;
@@ -510,12 +517,12 @@ html {
 }
 .stat--card-1 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(33, 149, 243, 0.2196078431);
+  border: 1px solid rgba(152, 181, 235, 0.2745098039);
   border-radius: 0.8rem;
 }
 .stat--card-2 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(33, 149, 243, 0.2196078431);
+  border: 1px solid rgba(152, 181, 235, 0.2745098039);
   border-radius: 0.8rem;
   color: #533a91;
 }
@@ -527,37 +534,37 @@ html {
 }
 .stat--card-4 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(196, 126, 52, 0.3215686275);
+  border: 1px solid rgba(255, 185, 110, 0.4235294118);
   border-radius: 0.8rem;
   color: #c47e34;
 }
 .stat--card-5 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(48, 157, 88, 0.4588235294);
+  border: 1px solid rgba(99, 225, 145, 0.4588235294);
   border-radius: 0.8rem;
   color: #309d58;
 }
 .stat--card-6 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(176, 88, 160, 0.5607843137);
+  border: 1px solid rgba(254, 163, 237, 0.5607843137);
   border-radius: 0.8rem;
   color: #b058a0;
 }
 .stat--card-7 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(46, 86, 186, 0.4862745098);
+  border: 1px solid rgba(139, 172, 255, 0.4862745098);
   border-radius: 0.8rem;
   color: #2e56ba;
 }
 .stat--card-8 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(38, 134, 146, 0.5215686275);
+  border: 1px solid rgba(58, 210, 231, 0.5215686275);
   border-radius: 0.8rem;
   color: #268692;
 }
 .stat--card-9 {
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(149, 71, 50, 0.5215686275);
+  border: 1px solid rgba(251, 156, 129, 0.5215686275);
   border-radius: 0.8rem;
   color: #954832;
 }
@@ -583,6 +590,7 @@ html {
   padding: 1rem 2rem 1.5rem 2rem;
   background-color: rgba(212, 223, 245, 0.1568627451);
   border-bottom: 1px solid #cfd1d3;
+  background-image: radial-gradient(#edeaed, #fff);
 }
 .header__text-1 {
   font-size: 1.2rem;
@@ -620,7 +628,7 @@ html {
 }
 .header .search__input {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 600;
   color: #6c757d;
   border: none;
   outline: none;
@@ -661,6 +669,10 @@ html {
   transition: all 0.2s ease-in-out;
 }
 
+.k {
+  font-weight: 600;
+}
+
 .icon {
   height: 2rem;
   width: 2rem;
@@ -688,6 +700,12 @@ html {
   flex: 1;
 }
 .nav__section {
+  margin-bottom: 3rem;
+}
+.nav__section--flex-settings {
+  display: flex;
+}
+.nav__team {
   margin-bottom: 3rem;
 }
 .nav__title {
@@ -756,14 +774,15 @@ html {
   padding-top: 3.5rem;
   border-top: 2px solid #cfd1d3;
 }
+.nav__settings-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
 .main__content-nav {
   padding-top: 3rem;
   border-top: 2px solid #cfd1d3;
-}
-
-.settings {
-  margin-top: 3rem;
 }
 
 .menu__title {
@@ -980,7 +999,7 @@ html {
   flex-direction: column;
 }
 .dashboard__header--title-text-1 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .dashboard__header--title-text-2 {
@@ -995,7 +1014,7 @@ html {
   padding: 1rem;
 }
 .dashboard__tasks--text-1 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .dashboard__img {
@@ -1008,6 +1027,8 @@ html {
   width: 2.8rem;
   border-radius: 50%;
   margin-left: -1.2rem;
+  height: 4rem;
+  width: 4rem;
   border: 2px solid #fff;
 }
 .dashboard .tasks__icon {
