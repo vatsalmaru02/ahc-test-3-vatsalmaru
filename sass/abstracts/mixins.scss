@@ -20,11 +20,6 @@
       @content;
     }
   }
-  @if $breakpoint == desktop {
-    @media only screen and (max-width: $bp-medium) {
-      @content;
-    }
-  }
   @if $breakpoint == big-desktop {
     @media only screen and (max-width: $bp-large) {
       @content;
@@ -81,7 +76,7 @@
 // Scrollbar styling mixin
 @mixin custom-scrollbar(
   $thumb-color: $color-accent-3,
-  $thumb-hover-color: $color-primary-light
+  $thumb-hover-color: $color-sidebar-bg
 ) {
   &::-webkit-scrollbar {
     width: 0.4rem;
@@ -93,7 +88,7 @@
 
   &::-webkit-scrollbar-thumb {
     height: 20px;
-    border-radius: $border-radius-pill;
+    border-radius: $border-radius-medium;
     background-color: $thumb-color;
 
     &:hover {

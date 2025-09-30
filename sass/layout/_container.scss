@@ -1,5 +1,6 @@
 .container {
-   display: grid; 
-   grid-template-columns: 1fr 5fr;
-   grid-template-rows: auto 1fr;
-} 
+  display: grid;
+  grid-template-columns: min(30rem, 40%) 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100dvh;
+}

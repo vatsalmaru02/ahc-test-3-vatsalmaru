@@ -1,15 +1,32 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 
-    
-    
+  @include respond(large-medium) {
+    font-size: 52.5%;
+  }
+
+  @include respond(largest) {
+    font-size: 57.375%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 54.25%;
+  }
+
+  @include respond(desktop) {
+    font-size: 53.125%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 50%;
+  }
 }

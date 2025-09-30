@@ -1,25 +1,56 @@
 .dashboard {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 1fr;
-  padding: 1rem;
+  padding: 2.4rem 2.4rem 1.6rem;
+  gap: 2.4rem;
+  align-items: start;
+
+  &__flex {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__flex-2 {
+    display: flex;
+    gap: 3rem;
+  }
 
   &__header {
+    grid-column: 1 / -1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0.8rem 2rem;
     border: 1px solid $color-border;
     border-radius: $border-radius-medium;
 
     &--title {
-        display: flex;
-        flex-direction: column;
-        border-right: 1px solid $color-border;
+      display: flex;
+      flex-direction: column;
 
-        &-text-1 {
-            font-size: $font-size-medium;
-            font-weight: $font-weight-semibold;
-        }
+      &-text-1 {
+        font-size: $font-size-small;
+        font-weight: $font-weight-semibold;
+      }
+
+      &-text-2 {
+        font-size: $font-size-mini;
+      }
+    }
+  }
+
+  &__tasks {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-left: 1px solid $color-border;
+    padding-left: 3rem;
+    padding: 1rem;
+
+    &--text-1 {
+      font-size: $font-size-small;
+      font-weight: $font-weight-semibold;
     }
   }
 
@@ -34,5 +65,60 @@
       margin-left: -1.2rem;
       border: 2px solid $color-white;
     }
+  }
+
+  .tasks__icon {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-left: 1px solid $color-border;
+    padding-left: 3rem;
+
+    &--primary {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-size: $font-size-tiny;
+      color: $color-text-primary;
+      font-weight: $font-weight-semibold;
+      padding: 0.8rem 1.3rem;
+      border: 1px solid $color-border;
+      border-radius: 8px;
+
+      &:hover {
+        transform: scale(1.02);
+        transition: $transition-fast;
+      }
+    }
+
+    &--secondary {
+      display: flex;
+      align-items: center;
+      background-color: $color-black;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-size: $font-size-tiny;
+      color: $color-white;
+      font-weight: $font-weight-semibold;
+      padding: 0.8rem 1.3rem;
+      border: 1px solid $color-border;
+      border-radius: 8px;
+
+      &:hover {
+        transform: scale(1.02);
+        transition: $transition-fast;
+      }
+    }
+  }
+
+  .column {
+    border: 1px solid $color-border;
+    border-radius: $border-radius-large;
   }
 }

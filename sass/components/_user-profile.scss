@@ -1,11 +1,14 @@
 .user {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: $color-text-primary;
   background-color: $color-white;
   box-shadow: $shadow-light;
   border-radius: 10px;
   transition: $transition-medium;
+  padding: 1rem 2rem ;
+  margin-top: auto;
   cursor: pointer;
 
   &__icon {
@@ -15,15 +18,14 @@
 }
 
 .user-profile {
-  padding: 1rem 2rem 1rem 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
 
   &__img {
-    height: 4rem;
-    width: 4rem;
+    height: 2.8rem;
+    width: 2.8rem;
     border-radius: $border-radius-round;
     object-fit: cover;
   }
@@ -33,12 +35,12 @@
   }
 
   &__name {
-    font-size: $font-size-regular;
-    font-weight: $font-weight-medium;
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-semibold;
     color: $color-text-primary;
   }
 
   &__email {
-    font-size: $font-size-small;
+    font-size: $font-size-mini;
   }
 }

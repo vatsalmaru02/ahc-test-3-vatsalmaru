@@ -78,7 +78,7 @@
           </div>
 
           <div class="nav__section">
-            <div class="nav__title">Main</div>
+            <div class="nav__title main__content-nav">Main</div>
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="#" class="nav__link">
@@ -213,8 +213,23 @@
                         d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
                       />
                     </svg>
-
-                    <p class="nav__description">Team</p>
+                    <label for="team" class="menu__title">
+                      <p class="nav__description">Team</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class=" icon menu__expand-icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </label>
                   </div>
                 </a>
               </li>
@@ -242,7 +257,7 @@
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">
-                  <div class="nav__conatiner">
+                  <div class="nav__conatiner settings">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -351,6 +366,23 @@
               class="search__input"
               placeholder="Find something"
             />
+            <div class="search--k-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon k__icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                />
+              </svg>
+              <p class="k">K</p>
+            </div>
           </form>
         </div>
         <div class="header__icons">
@@ -388,77 +420,1032 @@
       <!-- Dashboard -->
       <div class="dashboard">
         <div class="dashboard__header">
-          <div class="dashboard__header--title">
-            <p class="dashboard__header--title-text-1">May</p>
-            <p class="dashboard__header--title-text-2">Today is Saturday, Jul 9th, 2023</p>
+          <div class="dashboard__flex">
+            <div class="dashboard__header--title">
+              <p class="dashboard__header--title-text-1">May</p>
+              <p class="dashboard__header--title-text-2">
+                Today is Saturday, Jul 9th, 2023
+              </p>
+            </div>
+
+            <div class="dashboard__tasks">
+              <p class="dashboard__tasks--text-1">Board</p>
+              <span> - </span>
+              <p class="dashboard__tasks--text-2">Daily Tasks</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon tasks__icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
           </div>
 
-          <div class="dashboard__tasks">
-            <p class="dashboard__tasks--text-1">Board -</p>
-            <p class="dashboard__tasks--text-2">Daily Tasks</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="icon task__icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          <div class="dashboard__flex-2">
+            <div class="dashboard__img">
+              <img
+                src="./images/human-2.jpg"
+                alt="Team Members"
+                class="dashboard__img--team"
               />
-            </svg>
-          </div>
+              <img
+                src="./images/human-3.jpg"
+                alt="Team Members"
+                class="dashboard__img--team"
+              />
+              <img
+                src="./images/human-6.jpg"
+                alt="Team Members"
+                class="dashboard__img--team"
+              />
+              <img
+                src="./images/human-5.jpg"
+                alt="Team Members"
+                class="dashboard__img--team"
+              />
+              <img
+                src="./images/human-7.jpg"
+                alt="Team Members"
+                class="dashboard__img--team"
+              />
+            </div>
 
-          <div class="dashboard__img">
-            <img src="./images/human-2.jpg" alt="Team Members" class="dashboard__img--team">
-            <img src="./images/human-3.jpg" alt="Team Members" class="dashboard__img--team">
-            <img src="./images/human-6.jpg" alt="Team Members" class="dashboard__img--team">
-            <img src="./images/human-5.jpg" alt="Team Members" class="dashboard__img--team">
-            <img src="./images/human-7.jpg" alt="Team Members" class="dashboard__img--team">
-          </div>
+            <div class="dashboard__btn">
+              <a href="#" class="dashboard__btn--primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon btn__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <p>Filters</p>
+              </a>
 
-          <div class="dashboard__btn">
-            <a href="#" class="dashboard__btn--primary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icon btn__icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-              Filters
-            </a>
-
-            <a href="#" class="dashboard__btn--secondary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icon btn__icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 4.5v15m7.5-7.5h-15"
-                />
-              </svg>
-              Create Task 
-            </a>
+              <a href="#" class="dashboard__btn--secondary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon btn__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                Create Task
+              </a>
+            </div>
           </div>
         </div>
-        <div class="main__content">Content</div>
+        <div class="column">
+          <div class="column-header">
+            <div class="column-title">▸ Todo list</div>
+            <div class="column-actions">
+              <button class="icon-btn">+</button>
+              <button class="icon-btn">⋮</button>
+            </div>
+          </div>
+          <div class="card blue">
+            <div class="card-tags">
+              <span class="tag tag__card-1">#website</span>
+              <span class="tag tag__card-1">#client</span>
+              <button class="tag__btn tag__btn--card-1">⋮</button>
+            </div>
+            <div class="card-title card-title-card_1">
+              Search inspirations for upcoming project
+            </div>
+            <div class="card-note card-note-1">
+              Note: Tidy files our behance project Mise
+            </div>
+            <div class="progress-section">
+              <div class="progress-header">
+                <span class="progress-label__card_1">Progress</span>
+                <span class="progress-value__card_1">40%</span>
+              </div>
+              <div class="progress-dots">
+                <div class="dot dot__card_1 filled"></div>
+                <div class="dot dot__card_1 filled"></div>
+                <div class="dot dot__card_1 filled"></div>
+                <div class="dot dot__card_1 filled"></div>
+                <div class="dot dot__card_1 filled"></div>
+                <div class="dot dot__card_1 filled"></div>
+                <div class="dot dot__card_1"></div>
+                <div class="dot dot__card_1"></div>
+                <div class="dot dot__card_1"></div>
+                <div class="dot dot__card_1"></div>
+                <div class="dot dot__card_1"></div>
+                <div class="dot dot__card_1"></div>
+                <div class="dot dot__card_1"></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-1.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-2.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-3.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-4.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card purple">
+            <div class="card-tags">
+              <span class="tag tag__card-2">#mobile app</span>
+              <span class="tag tag__card-2">#client</span>
+              <button class="tag__btn tag__btn--card-1">⋮</button>
+            </div>
+            <div class="card-title card-title-card_2">
+              Ginko mobile app design
+            </div>
+            <div class="checklist">
+              <div class="checklist-item checklist-item-1">
+                <input type="checkbox" class="checkbox checkbox-1" checked />
+                <span>Create user flow</span>
+              </div>
+              <div class="checklist-item checklist-item-1">
+                <input type="checkbox" class="checkbox checkbox-1" checked />
+                <span>Make wireframe</span>
+              </div>
+              <div class="checklist-item checklist-item-1">
+                <input type="checkbox" class="checkbox checkbox-1" />
+                <span>Design onboarding screens</span>
+              </div>
+              <div class="checklist-item checklist-item-1">
+                <input type="checkbox" class="checkbox checkbox-1" />
+                <span>Make prototype</span>
+              </div>
+            </div>
+            <div class="card-note card-note-2">
+              Note: We have a meeting 2:34 AM
+            </div>
+            <div class="progress-section">
+              <div class="progress-header">
+                <span class="progress-label__card_2">Progress</span>
+                <span class="progress-value__card_2">15%</span>
+              </div>
+              <div class="progress-dots">
+                <div class="dot dot__card_2 filled"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+                <div class="dot dot__card_2"></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-5.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-6.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-7.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-8.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  7
+                </div>
+                <div class="stat stat--card-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  2
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card pink">
+            <div class="card-tags">
+              <span class="tag tag__card-3">#mobile app</span>
+              <span class="tag tag__card-3">#client</span>
+              <button class="tag__btn tag__btn--card-3">⋮</button>
+            </div>
+            <div class="card-title card-title-card_3">
+              Make user flow of akua mobile bankig app
+            </div>
+            <div class="progress-section">
+              <div class="progress-header">
+                <span class="progress-label__card_3">Progress</span>
+                <span class="progress-value__card_3">30%</span>
+              </div>
+              <div class="progress-dots">
+                <div class="dot dot__card_3 filled pink"></div>
+                <div class="dot dot__card_3 filled pink"></div>
+                <div class="dot dot__card_3 filled pink"></div>
+                <div class="dot dot__card_3 filled pink"></div>
+                <div class="dot dot__card_3 filled pink"></div>
+                <div class="dot dot__card_3"></div>
+                <div class="dot dot__card_3"></div>
+                <div class="dot dot__card_3"></div>
+                <div class="dot dot__card_3"></div>
+                <div class="dot dot__card_3"></div>
+                <div class="dot dot__card_3"></div>
+                <div class="dot dot__card_3"></div>
+                <div class="dot dot__card_3"></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-9.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-10.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column column-2">
+          <div class="column-header">
+            <div class="column-title">▸ In Progress</div>
+            <div class="column-actions">
+              <button class="icon-btn">+</button>
+              <button class="icon-btn">⋮</button>
+            </div>
+          </div>
+
+          <div class="card orange">
+            <div class="card-tags">
+              <span class="tag tag__card-4">#mobile app</span>
+              <span class="tag tag__card-4">#client</span>
+              <button class="tag__btn tag__btn--card-4">⋮</button>
+            </div>
+            <div class="card-title card-title-card_4">
+              Search inspirations for upcoming project
+            </div>
+            <div class="card__container">
+              <img src="design (1).png" alt="design img" class="img-in-card" />
+            </div>
+            <div class="card-note card-note-4">
+              Note: Tidy files our behance project Mise
+            </div>
+            <div class="progress-section">
+              <div class="progress-header">
+                <span class="progress-label__card_4">Progress</span>
+                <span class="progress-value__card_4">90%</span>
+              </div>
+              <div class="progress-dots">
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4 filled orange"></div>
+                <div class="dot dot__card_4"></div>
+                <div class="dot dot__card_4"></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-9.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-10.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  6
+                </div>
+                <div class="stat stat--card-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  1
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card green">
+            <div class="card-tags">
+              <span class="tag tag__card-5">#products</span>
+              <span class="tag tag__card-5">#client</span>
+              <button class="tag__btn tag__btn--card-5">⋮</button>
+            </div>
+            <div class="card-title card-title-card_5">
+              Search inspirations for upcoming project
+            </div>
+            <div class="card-note card-note-5">
+              Note: Tidy files our behance project Mise
+            </div>
+            <div class="progress-section">
+              <div class="progress-header">
+                <span class="progress-label__card_5">Progress</span>
+                <span class="progress-value__card_5">40%</span>
+              </div>
+              <div class="progress-dots">
+                <div class="dot dot__card_5 filled green"></div>
+                <div class="dot dot__card_5 filled green"></div>
+                <div class="dot dot__card_5 filled green"></div>
+                <div class="dot dot__card_5 filled green"></div>
+                <div class="dot dot__card_5 filled green"></div>
+                <div class="dot dot__card_5 filled green"></div>
+                <div class="dot dot__card_5"></div>
+                <div class="dot dot__card_5"></div>
+                <div class="dot dot__card_5"></div>
+                <div class="dot dot__card_5"></div>
+                <div class="dot dot__card_5"></div>
+                <div class="dot dot__card_5"></div>
+                <div class="dot dot__card_5"></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-11.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-12.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column column-3">
+          <div class="column-header">
+            <div class="column-title">▸ In Review</div>
+            <div class="column-actions">
+              <button class="icon-btn">+</button>
+              <button class="icon-btn">⋮</button>
+            </div>
+          </div>
+          <div class="card purple-2">
+            <div class="card-tags">
+              <span class="tag tag__card-6">#development</span>
+              <span class="tag tag__card-6">#client</span>
+              <button class="tag__btn tag__btn--card-6">⋮</button>
+            </div>
+            <div class="card-title card-title-card_6">
+              Oryo product landing page create in webflow
+            </div>
+
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-13.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-14.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-15.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-16.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card blue-2">
+            <div class="card-tags">
+              <span class="tag tag__card-7">#product</span>
+              <span class="tag tag__card-7">#client</span>
+              <button class="tag__btn tag__btn--card-7">⋮</button>
+            </div>
+            <div class="card-title card-title-card_7">
+              Natverk video platform web app design and develop
+            </div>
+
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-1.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-2.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-3.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-7">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-7">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card orange">
+            <div class="card-tags">
+              <span class="tag tag__card-4">#website</span>
+              <span class="tag tag__card-4">#client</span>
+              <button class="tag__btn tag__btn--card-4">⋮</button>
+            </div>
+            <div class="card-title card-title-card_4">
+              Redesign grab website landing and login pages
+            </div>
+
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-4.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-5.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card purple">
+            <div class="card-tags">
+              <span class="tag tag__card-1">#mobileapp</span>
+              <span class="tag tag__card-1">#client</span>
+              <button class="tag__btn tag__btn--card-4">⋮</button>
+            </div>
+            <div class="card-title card-title-card_1">
+              Create Odyah app prototype for Get information in figma
+            </div>
+
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-6.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-7.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column column-4">
+          <div class="column-header">
+            <div class="column-title">▸ Done</div>
+            <div class="column-actions">
+              <button class="icon-btn">+</button>
+              <button class="icon-btn">⋮</button>
+            </div>
+          </div>
+
+          <div class="card cyan">
+            <div class="card-tags">
+              <span class="tag tag__card-8">#mobile app</span>
+              <span class="tag tag__card-8">#client</span>
+              <button class="tag__btn tag__btn--card-8">⋮</button>
+            </div>
+            <div class="card-title card-title-card_8">
+              Affito product full service
+            </div>
+            <div class="checklist">
+              <div class="checklist-item checklist-item-2">
+                <input type="checkbox" class="checkbox checkbox-2" checked />
+                <span>Branding</span>
+              </div>
+              <div class="checklist-item checklist-item-2">
+                <input type="checkbox" class="checkbox checkbox-2" checked />
+                <span>Mobile app design & development</span>
+              </div>
+              <div class="checklist-item checklist-item-2">
+                <input type="checkbox" class="checkbox checkbox-2" checked />
+                <span>Landing page design & development</span>
+              </div>
+              <div class="checklist-item checklist-item-2">
+                <input type="checkbox" class="checkbox checkbox-2" checked />
+                <span>Dashboard design & development</span>
+              </div>
+              <div class="checklist-item checklist-item-2">
+                <input type="checkbox" class="checkbox checkbox-2" checked />
+                <span>Marketing</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-8.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-9.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-10.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-11.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-12.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-8">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  7
+                </div>
+                <div class="stat stat--card-8">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  2
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card peach">
+            <div class="card-tags">
+              <span class="tag tag__card-9">#products</span>
+              <span class="tag tag__card-9">#client</span>
+              <button class="tag__btn tag__btn--card-6">⋮</button>
+            </div>
+            <div class="card-title card-title-card_9">
+              Design Moli app product page redesign
+            </div>
+
+            <div class="card-footer">
+              <div class="avatars">
+                <img
+                  src="./images/human-13.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-14.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+                <img
+                  src="./images/human-15.jpg"
+                  alt="team members"
+                  class="avatar"
+                />
+              </div>
+              <div class="card-stats">
+                <div class="stat stat--card-9">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+                    />
+                  </svg>
+                  12
+                </div>
+                <div class="stat stat--card-9">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="stat__icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

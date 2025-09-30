@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "sass sass/main.scss style.css -w"
+    "start": "sass sass/main.scss style.css -w "
   },
   "dependencies": {
     "sass": "^1.93.2"
