@@ -590,7 +590,7 @@ html {
   padding: 1rem 2rem 1.5rem 2rem;
   background-color: rgba(212, 223, 245, 0.1568627451);
   border-bottom: 1px solid #cfd1d3;
-  background-image: radial-gradient(#edeaed, #fff);
+  background-image: radial-gradient(circle, #edeaed, #fff);
 }
 .header__text-1 {
   font-size: 1.2rem;
