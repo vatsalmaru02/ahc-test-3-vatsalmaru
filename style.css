@@ -590,7 +590,7 @@ html {
   padding: 1rem 2rem 1.5rem 2rem;
   background-color: rgba(212, 223, 245, 0.1568627451);
   border-bottom: 1px solid #cfd1d3;
-  background-image: radial-gradient(circle, #fffbff, #fff);
+  background-image: radial-gradient(circle, #edeaed, #fff);
 }
 .header__text-1 {
   font-size: 1.2rem;
@@ -714,7 +714,7 @@ html {
   color: #6c757d;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
   transition: opacity 0.3s, width 0.3s;
 }
@@ -981,9 +981,25 @@ html {
   gap: 2.4rem;
   align-items: start;
 }
-.dashboard__flex, .dashboard__flex-2 {
+@media only screen and (max-width: 87.625em) {
+  .dashboard__flex {
+    display: flex;
+    gap: 15rem;
+  }
+}
+.dashboard__flex {
   display: flex;
-  gap: 3rem;
+  gap: 12rem;
+}
+@media only screen and (max-width: 87.625em) {
+  .dashboard__flex-2 {
+    display: flex;
+    gap: 5rem;
+  }
+}
+.dashboard__flex-2 {
+  display: flex;
+  gap: 2rem;
 }
 .dashboard__header {
   grid-column: 1/-1;
@@ -1041,7 +1057,12 @@ html {
   align-items: center;
   gap: 1rem;
   border-left: 1px solid #cfd1d3;
-  padding-left: 3rem;
+  padding-left: 4.5rem;
+}
+@media only screen and (max-width: 87.625em) {
+  .dashboard__btn {
+    padding-left: 7rem;
+  }
 }
 .dashboard__btn--primary, .dashboard__btn--secondary {
   display: flex;

@@ -5,12 +5,22 @@
   padding: 2.4rem 2.4rem 1.6rem;
   gap: 2.4rem;
   align-items: start;
-  
 
-  &__flex,
-  &__flex-2 {
+  &__flex {
+    @include respond(large-medium) {
+      display: flex;
+      gap: 15rem;
+    }
     display: flex;
-    gap: 3rem;
+    gap: 12rem;
+  }
+  &__flex-2 {
+    @include respond(large-medium) {
+      display: flex;
+      gap: 5rem;
+    }
+    display: flex;
+    gap: 2rem;
   }
 
   &__header {
@@ -21,7 +31,6 @@
     padding: 0.8rem 1.3rem;
     border: 1px solid $color-border;
     border-radius: $border-radius-medium;
-   
 
     &--title {
       display: flex;
@@ -77,7 +86,10 @@
     align-items: center;
     gap: 1rem;
     border-left: 1px solid $color-border;
-    padding-left: 3rem;
+    padding-left: 4.5rem;
+    @include respond(large-medium) {
+      padding-left: 7rem;
+    }
 
     &--primary,
     &--secondary {
