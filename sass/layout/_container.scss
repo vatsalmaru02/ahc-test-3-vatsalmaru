@@ -1,6 +1,37 @@
 .container {
   display: grid;
-  grid-template-columns: min(30rem, 40%) 1fr;
+  grid-template-columns: min(30rem, 40%) 1fr; // default large screens
   grid-template-rows: auto 1fr;
   height: 100dvh;
+
+  // Large-medium screens
+  @include respond(large-medium) {
+    grid-template-columns: min(28rem, 35%) 1fr;
+  }
+
+  // Tablets landscape / smaller desktops
+  @include respond(tab-land) {
+    grid-template-columns: min(25rem, 40%) 1fr;
+  }
+
+  // Tablets portrait
+  @include respond(tab-port) {
+    grid-template-columns: 1fr 11fr; // 2 equal columns
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+  }
+
+  // Phones
+  @include respond(phone) {
+    grid-template-columns: 1fr 9fr; // 2 columns, responsive
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+  }
+
+  // Extra small phones
+  @include respond(phone-small) {
+    grid-template-columns: 1fr 9fr; // 2 responsive columns
+    grid-template-rows: auto 1fr;
+    gap: 0.8rem;
+  }
 }

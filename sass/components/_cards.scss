@@ -2,18 +2,22 @@
   background: $color-white;
   border-radius: 1.2rem;
   padding: 1rem 2rem;
-  max-height: 74vh;
+
   overflow-y: auto;
   @include custom-scrollbar;
 
+  &-1 {
+    max-height: 74vh;
+  }
+
   &-2 {
-    height: 60vh;
+    max-height: 60vh;
   }
   &-3 {
-    height: 65vh;
+    max-height: 65vh;
   }
   &-4 {
-    height: 55vh;
+    max-height: 55vh;
   }
 
   .column-header {
@@ -22,6 +26,11 @@
     align-items: center;
     padding-bottom: 1rem;
     border-bottom: 1px solid $color-border;
+
+    position: sticky;
+    top: 0;
+    background: $color-white;
+    z-index: 10;
 
     .column-title {
       font-size: $font-size-small;
@@ -41,6 +50,10 @@
         background: none;
         cursor: pointer;
         font-size: $font-size-medium;
+        &:hover {
+          transform: scale(1.05);
+          transition: $transition-fast;
+        }
       }
     }
   }
@@ -131,6 +144,10 @@
       font-weight: $font-weight-medium;
       background: rgba(255, 255, 255, 0.7);
       cursor: pointer;
+      &:hover {
+        transform: scale(1.02);
+        transition: $transition-fast;
+      }
 
       &__card-1 {
         color: #426fc3;
@@ -167,6 +184,10 @@
         background: transparent;
         padding: 0 0.8rem;
         cursor: pointer;
+        &:hover {
+          transform: scale(1.02);
+          transition: $transition-fast;
+        }
 
         &--card-1 {
           border: 1px solid #426fc346;
@@ -408,6 +429,11 @@
         gap: 0.4rem;
         font-size: $font-size-tiny;
 
+        &:hover {
+          transform: scale(1.02);
+          transition: $transition-fast;
+        }
+
         &--card-1 {
           color: #426fc3;
         }
@@ -575,7 +601,7 @@
 }
 
 .img-in-card {
-  width: 20rem !important;
+  max-width: 19rem !important;
   height: 10rem !important;
   border-top: 5px solid #c47e3452;
   border-right: 5px solid #c47e3452;

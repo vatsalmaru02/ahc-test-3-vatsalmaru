@@ -30,7 +30,7 @@
     transition: $transition-fast;
     box-shadow: $shadow-medium;
     background-color: $color-white;
-    
+
     &__icon {
       height: $spacing-md;
       width: $spacing-md;
@@ -75,18 +75,23 @@
       }
     }
   }
-  
+
   &__icons {
     display: flex;
     gap: 1rem;
     cursor: pointer;
 
     .help__icon {
-        height: 3.6rem;
-        width: 3.6rem;
-        padding: .8rem;
-        background-color: $color-white;
-        border-radius: $border-radius-round;
+      height: 3.6rem;
+      width: 3.6rem;
+      padding: 0.8rem;
+      background-color: $color-white;
+      border-radius: $border-radius-round;
+
+      &:hover {
+        transform: scale(1.03);
+        transition: $transition-fast;
+      }
     }
   }
 }

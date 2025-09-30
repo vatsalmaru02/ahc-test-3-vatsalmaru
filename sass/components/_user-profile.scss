@@ -7,7 +7,7 @@
   box-shadow: $shadow-light;
   border-radius: 10px;
   transition: $transition-medium;
-  padding: 1rem 2rem ;
+  padding: 1rem 2rem;
   margin-top: auto;
   cursor: pointer;
 
@@ -42,5 +42,15 @@
 
   &__email {
     font-size: $font-size-mini;
+  }
+}
+@include respond(tab-port) {
+  // tablet portrait and below
+  .user {
+    display: none; // hides the entire user container
+  }
+
+  .user-profile {
+    display: none; // in case it's separate, hide it too
   }
 }

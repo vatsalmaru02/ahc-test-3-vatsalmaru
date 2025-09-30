@@ -16,6 +16,7 @@
     letter-spacing: 1px;
     padding: 0 2rem;
     margin-bottom: 1rem;
+    transition: opacity 0.3s, width 0.3s;
   }
 
   &__conatiner {
@@ -84,7 +85,6 @@
   }
 }
 
-
 .main__content-nav {
   padding-top: 3rem;
   border-top: 2px solid $color-border;
@@ -94,7 +94,6 @@
   margin-top: 3rem;
 }
 
-
 .menu__title {
   display: flex;
   align-items: center;
@@ -103,5 +102,104 @@
   &__expand-icon {
     height: 1.2rem;
     width: 1.2rem;
+  }
+}
+
+/* submenu handling remains the same */
+.nav__item--has-children .nav__link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 0.8rem;
+  color: #495057;
+  font-size: 1.2rem;
+  font-weight: $font-weight-semibold;
+  transition: all 0.2s;
+}
+
+.nav__item--has-children .nav__conatiner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  li {
+    margin: 0.2rem 0;
+
+    a {
+      display: block;
+      padding: 0.6rem 1.2rem 0.6rem 3.5rem;
+      font-size: 1.1rem;
+      color: #495057;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #f5f6f7;
+        color: $color-text-primary;
+        box-shadow: $shadow-light;
+      }
+    }
+  }
+}
+
+.submenu-toggle:checked ~ .submenu {
+  max-height: 300px;
+  margin-top: 0.3rem;
+}
+
+.submenu-toggle:checked + .nav__link .menu__expand-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+// Sidebar responsive adjustments
+@include respond(tab-port) {
+  .nav {
+    &__description {
+      display: none;
+    }
+
+    &__title {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__link {
+      gap: 0;
+    }
+
+    &__badge {
+      display: none;
+    }
+
+    &__main-content {
+      padding-top: 1.5rem;
+    }
+
+    // Hide expand icons for submenu items
+    .menu__expand-icon {
+      display: none;
+    }
+
+    // Prevent submenu from opening
+    .submenu {
+      max-height: 0 !important;
+      overflow: hidden !important;
+    }
   }
 }

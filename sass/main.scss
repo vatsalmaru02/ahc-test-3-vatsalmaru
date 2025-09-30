@@ -5,20 +5,16 @@
 //base
 @import "base/base";
 @import "base/reset";
-@import "base/typography";
+
 
 //components
 @import "components/buttons";
 @import "components/cards";
-@import "components/done";
 @import "components/header";
 @import "components/icon";
-@import "components/inprogress";
-@import "components/inreview";
 @import "components/logo";
 @import "components/navbar";
 @import "components/sidebar";
-@import "components/todolist";
 @import "components/user-profile";
 
 //dashboard
@@ -26,3 +22,4 @@
 
 //layout
 @import "layout/container";
+@import "layout/media";

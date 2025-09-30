@@ -6,7 +6,7 @@
   background-color: $color-sidebar-bg;
   padding: 0 1.2rem;
   overflow-y: auto;
-  // @include custom-scrollbar;
+  @include custom-scrollbar;
 
   &__header {
     display: flex;
@@ -15,5 +15,20 @@
     font-size: $font-size-medium;
     font-weight: $font-weight-medium;
     padding: 1rem 1.2rem;
+    cursor: pointer;
+  }
+}
+
+@include respond(tab-port) {
+
+  .sidebar{
+    width: 6.5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+  .header__icon {
+    display: none;
   }
 }
